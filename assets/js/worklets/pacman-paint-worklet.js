@@ -19,12 +19,12 @@ if (typeof registerPaint !== 'undefined') {
 
     class Pacman {
         static get inputProperties() {
-            return ['--magic-color-one', '--magic-color-two'];
+            return ['--pacman-color-one', '--pacman-color-two'];
         }
 
         paint(ctx, geometry, properties) {
-            const colorOne = properties.get('--magic-color-one');
-            const colorTwo = properties.get('--magic-color-two');
+            const colorOne = properties.get('--pacman-color-one');
+            const colorTwo = properties.get('--pacman-color-two');
             
             roundedRect(ctx, 12, 12, 150, 150, 15);
             roundedRect(ctx, 19, 19, 150, 150, 9);

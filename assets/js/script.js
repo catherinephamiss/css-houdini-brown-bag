@@ -2,21 +2,36 @@
 
 // register new css properties
 CSS.registerProperty({
-    name: '--magic-color-one',
+    name: '--pacman-color-one',
     syntax: '<color>',
-    inherits: false,
+    inherits: true,
     initialValue: 'gray'
-});
-CSS.registerProperty({
-    name: '--magic-color-two',
+}, {
+    name: '--pacman-color-two',
     syntax: '<color>',
-    inherits: false,
+    inherits: true,
     initialValue: 'lightgray',
+}, {
+//     name: '--line-color',
+//     syntax: '<color>',
+//     inherits: true,
+//     initialValue: 'black'
+// }, {
+//     name: '--line-thickness',
+//     syntax: '<length>',
+//     inherits: true,
+//     initialValue: '2px'
+// }, {
+    name: '--hover',
+    syntax: '<color>',
+    inherits: true,
+    initialValue: 'lightpurple'
 });
 
 // add worklets below
 if ('paintWorklet' in CSS) {
-    CSS.paintWorklet.addModule('assets/js/worklets/magical-paint-worklet.js');
+    CSS.paintWorklet.addModule('assets/js/worklets/pacman-paint-worklet.js');
+    // CSS.paintWorklet.addModule('assets/js/worklets/headings-paint-worklet.js');
 } else {
     document.querySelector('html').classList.add('no-paintapi-support');
 }

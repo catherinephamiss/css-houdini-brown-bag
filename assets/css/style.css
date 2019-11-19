@@ -7,6 +7,7 @@ body {
 footer {
     margin: 5rem auto 0;
     width: 100%;
+    font-style: italic;
 }
 
 .pacman {
@@ -18,25 +19,65 @@ footer {
 }
 
 #p1 {
-    --magic-color-one: lightseagreen;
-    --magic-color-two: khaki;
+    --pacman-color-one: lightseagreen;
+    --pacman-color-two: khaki;
 }
 
 #p2 {
-    --magic-color-one: fuchsia;
-    --magic-color-two: goldenrod;
+    --pacman-color-one: fuchsia;
+    --pacman-color-two: navajowhite;
 }
 
 #p3 {
-    --magic-color-one: lavenderblush;
-    --magic-color-two: rebeccapurple;
+    --pacman-color-one: turquoise;
+    --pacman-color-two: rebeccapurple;
 }
 
 #p4 {
-    --magic-color-one: indianred;
-    --magic-color-two: peru;
+    --pacman-color-one: indianred;
+    --pacman-color-two: lawngreen;
 }
 
+/* h1,
+h2,
+h3 {
+    background-image: paint(HeadingPainter);
+} */
+
+h1 {
+    /* --line-color: wheat;
+    --line-thickness: 1px; */
+    --hover: cadetblue;
+    background: linear-gradient(white, var(--hover));
+    transition: --hover 1s;
+}
+
+h1:hover,
+h1:focus,
+h1:active {
+    --hover: burlywood;
+}
+
+/* h2 {
+    --line-color: powderblue;
+    --line-thickness: 2px;
+}
+
+h3 {
+    --line-thickness: 3px;
+}
+
+h3 .pirate {
+    --line-color: silver;
+}
+
+h3 .sagan {
+    --line-color: skyblue;
+}
+
+h3 .cheese {
+    --line-color: bisque;
+} */
 
 #warning {
     display: none;
