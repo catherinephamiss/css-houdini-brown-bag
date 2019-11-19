@@ -5,22 +5,30 @@ body {
 }
 
 footer {
-    text-align: center;
-    width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.pirate {
-    --magic-color: lightseagreen;
-    background-image: paint(Magic);
+#pacman {
+    height: 200px;
+    width: auto;
+    text-align: center;
+    --magic-color-one: lightseagreen;
+    --magic-color-two: khaki;
 }
 
-/* .sagan {}
+#warning {
+    display: none;
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: orange;
+    border: 2px solid black;
+}
 
-.cheese {} */
-
-.no-paintapi-support {
-    background-color: lightblue;
-    border: 1px solid black;
+.no-paintapi-support #warning {
+    display: block;
 }
