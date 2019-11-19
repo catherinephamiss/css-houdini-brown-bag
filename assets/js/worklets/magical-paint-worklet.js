@@ -3,7 +3,7 @@
 // check to make sure paint api is supported
 if (typeof registerPaint !== 'undefined') {
 
-    function roundedRect(ctx, x, y, width, height, radius) {
+    const roundedRect = (ctx, x, y, width, height, radius) => {
         ctx.beginPath();
         ctx.moveTo(x, y + radius);
         ctx.lineTo(x, y + height - radius);

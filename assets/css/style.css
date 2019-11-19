@@ -5,21 +5,38 @@ body {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    margin: 5rem auto 0;
     width: 100%;
-    margin: 0 auto;
 }
 
-#pacman {
+.pacman {
     height: 200px;
-    width: auto;
+    width: 200px;
+    display: inline-block;
     text-align: center;
+    background-image: paint(Pacman);
+}
+
+#p1 {
     --magic-color-one: lightseagreen;
     --magic-color-two: khaki;
 }
+
+#p2 {
+    --magic-color-one: fuchsia;
+    --magic-color-two: goldenrod;
+}
+
+#p3 {
+    --magic-color-one: lavenderblush;
+    --magic-color-two: rebeccapurple;
+}
+
+#p4 {
+    --magic-color-one: indianred;
+    --magic-color-two: peru;
+}
+
 
 #warning {
     display: none;
@@ -29,6 +46,8 @@ footer {
     border: 2px solid black;
 }
 
-.no-paintapi-support #warning {
+.no-paintapi-support #warning,
+.no-animationapi-support #warning,
+.no-layoutapi-support #warning {
     display: block;
 }

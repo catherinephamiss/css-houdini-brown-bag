@@ -18,18 +18,17 @@ CSS.registerProperty({
 if ('paintWorklet' in CSS) {
     CSS.paintWorklet.addModule('assets/js/worklets/magical-paint-worklet.js');
 } else {
-    console.log("no paint api support");
     document.querySelector('html').classList.add('no-paintapi-support');
 }
 
 // if ('animationWorklet' in CSS) {
 //     CSS.animationWorklet.addModule('assets/js/worklets/magical-animation-worklet.js');
 // } else {
-//     document.querySelector('html').classList.add('no-paintapi-support');
+//     document.querySelector('html').classList.add('no-animationapi-support');
 // }
 
 // if ('layoutWorklet' in CSS) {
 //     CSS.layoutWorklet.addModule('assets/js/worklets/magical-layout-worklet.js');
 // } else {
-//     document.querySelector('html').classList.add('no-paintapi-support');
+//     document.querySelector('html').classList.add('no-layoutapi-support');
 // }
