@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.pirate {
+    --magic-color: lightseagreen;
+    background-image: paint(Magic);
+}
+
+/* .sagan {}
+
+.cheese {} */
+
+.no-paintapi-support {
+    background-color: lightblue;
+    border: 1px solid black;
+}
