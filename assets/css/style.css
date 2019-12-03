@@ -1,13 +1,23 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 5rem;
     padding: 0 4rem;
+    min-height: 100%;
 }
 
 footer {
-    margin: 5rem auto 0;
+    height: 4rem;
+    margin-top: 1rem;
     width: 100%;
     font-style: italic;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .pacman {
@@ -19,76 +29,76 @@ footer {
 }
 
 #p1 {
-    --pacman-color-one: lightseagreen;
-    --pacman-color-two: khaki;
+    --pacman-color-one: #ea5732;
+    --pacman-color-two: #bada55;
 }
 
 #p2 {
-    --pacman-color-one: fuchsia;
-    --pacman-color-two: navajowhite;
+    --pacman-color-one: #e66;
+    --pacman-color-two: #101ca7;
 }
 
 #p3 {
-    --pacman-color-one: turquoise;
-    --pacman-color-two: rebeccapurple;
+    --pacman-color-one: #bada55;
+    --pacman-color-two: #60061e;
 }
 
 #p4 {
-    --pacman-color-one: indianred;
-    --pacman-color-two: lawngreen;
+    --pacman-color-one: #ba11e2;
+    --pacman-color-two: #c0ffee;
 }
 
-/* h1,
+#page-title {
+    color: white;
+    --hover: #D4D;
+    background: linear-gradient(#60D, var(--hover));
+    transition: --hover 2s;
+}
+
+#page-title:hover {
+    --hover: #666;
+}
+
 h2,
 h3 {
-    background-image: paint(HeadingPainter);
-} */
-
-h1 {
-    /* --line-color: wheat;
-    --line-thickness: 1px; */
-    --hover: cadetblue;
-    background: linear-gradient(white, var(--hover));
-    transition: --hover 1s;
+    width: max-content;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+    margin: 0 auto;
 }
 
-h1:hover,
-h1:focus,
-h1:active {
-    --hover: burlywood;
-}
-
-/* h2 {
+h2 {
     --line-color: powderblue;
-    --line-thickness: 2px;
+    --line-width: 20px;
+    background-image: paint(HeadingUnderline);
 }
 
-h3 {
-    --line-thickness: 3px;
-}
-
-h3 .pirate {
+h3.pirate {
+    --line-width: 10px;
     --line-color: silver;
+    background-image: paint(HeadingUnderline);
 }
 
-h3 .sagan {
+h3.sagan {
+    --line-width: 8px;
     --line-color: skyblue;
+    background-image: paint(HeadingUnderline);
 }
 
-h3 .cheese {
+h3.cheese {
+    --line-width: 5px;
     --line-color: bisque;
-} */
+    background-image: paint(HeadingUnderline);
+}
 
 #warning {
     display: none;
     padding: 1rem;
     margin: 1rem auto;
-    background-color: orange;
-    border: 2px solid black;
+    background-color: #F81;
+    border: 2px solid #101;
 }
 
-.no-paintapi-support #warning,
-.no-animationapi-support #warning,
-.no-layoutapi-support #warning {
+.no-houdini-support #warning {
     display: block;
 }
