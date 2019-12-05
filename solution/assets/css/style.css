@@ -69,27 +69,27 @@ h3 {
 
 h2 {
     --line-color: powderblue;
-    --line-width: 20px;
+    --line-width: 3;
     --line-number: 1;
     background-image: paint(HeadingUnderline);
 }
 
 h3.pirate {
-    --line-width: 10px;
+    --line-width: 5;
     --line-color: silver;
     --line-number: 3;
     background-image: paint(HeadingUnderline);
 }
 
 h3.sagan {
-    --line-width: 8px;
+    --line-width: 8;
     --line-color: skyblue;
     --line-number: 2;
     background-image: paint(HeadingUnderline);
 }
 
 h3.cheese {
-    --line-width: 5px;
+    --line-width: 5;
     --line-color: bisque;
     --line-number: 5;
     background-image: paint(HeadingUnderline);

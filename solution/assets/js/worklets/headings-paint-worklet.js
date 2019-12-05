@@ -7,22 +7,26 @@ if (typeof registerPaint !== 'undefined') {
             return ['--line-color', '--line-width', '--line-number'];
         }
 
-        paint(ctx, geometry, properties) {
-            const color = properties.get('--line-color');
-            const thickness = properties.get('--line-width');
-            const number = properties.get('--line-number');
-            ctx.strokeStyle = color;
-            ctx.lineWidth = thickness;
+        paint(ctx, size, props) {
+            const color = props.get('--line-color');
+            const width = props.get('--line-width');
+            const number = props.get('--line-number');
 
             for (let i=0; i<number; i++) {
-                const yStart = Math.floor(Math.random() * geometry.height - 1);
-                const xEnd = geometry.width;
-                const yEnd = Math.floor(Math.random() * geometry.height - 1);
+                const yStart = Math.floor(Math.random() * size.height - 1);
+                const xEnd = size.width;
+                const yEnd = Math.floor(Math.random() * size.height - 1);
 
-                ctx.beginPath();
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = width;
                 ctx.moveTo(0, yStart);
                 ctx.lineTo(xEnd, yEnd);
-                ctx.closePath();
+                ctx.stroke();
+                
+                ctx.strokeStyle = color;
+                ctx.lineWidth = width;
+                ctx.moveTo(0, yStart);
+                ctx.lineTo(xEnd, yEnd);
                 ctx.stroke();
             }
 

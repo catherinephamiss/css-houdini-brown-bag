@@ -22,9 +22,9 @@ if (typeof registerPaint !== 'undefined') {
             return ['--pacman-color-one', '--pacman-color-two'];
         }
 
-        paint(ctx, geometry, properties) {
-            const colorOne = properties.get('--pacman-color-one');
-            const colorTwo = properties.get('--pacman-color-two');
+        paint(ctx, size, props) {
+            const colorOne = props.get('--pacman-color-one');
+            const colorTwo = props.get('--pacman-color-two');
             
             roundedRect(ctx, 12, 12, 150, 150, 15);
             roundedRect(ctx, 19, 19, 150, 150, 9);

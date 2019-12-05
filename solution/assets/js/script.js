@@ -24,9 +24,9 @@ if('registerProperty' in CSS) {
         initialValue: 'blue'
     }, {
         name: '--line-width',
-        syntax: '<length>',
+        syntax: '<number>',
         inherits: true,
-        initialValue: '10px'
+        initialValue: '5'
     }, {
         name: '--line-number',
         syntax: '<integer>',
@@ -46,14 +46,6 @@ if ('paintWorklet' in CSS) {
     document.querySelector('html').classList.add('no-houdini-support');
 }
 
-// if ('animationWorklet' in CSS) {
-//     CSS.animationWorklet.addModule('assets/js/worklets/magical-animation-worklet.js');
-// } else {
-//     document.querySelector('html').classList.add('no-houdini-support');
-// }
-
-// if ('layoutWorklet' in CSS) {
-//     CSS.layoutWorklet.addModule('assets/js/worklets/magical-layout-worklet.js');
-// } else {
-//     document.querySelector('html').classList.add('no-houdini-support');
-// }
+// Typed OM stuff below
+const headingOne = document.getElementById('page-title');
+headingOne.attributeStyleMap.set('--hover', "red");
