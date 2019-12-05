@@ -12,24 +12,27 @@ if('registerProperty' in CSS) {
         syntax: '<color>',
         inherits: true,
         initialValue: 'lightgray',
-    });
-    CSS.registerProperty({
+    }, {
         name: '--hover',
         syntax: '<color>',
         inherits: true,
         initialValue: 'transparent'
-    });
-    CSS.registerProperty({
+    }, {
         name: '--line-color',
         syntax: '<color>',
         inherits: true,
         initialValue: 'blue'
-    });
-    CSS.registerProperty({
+    }, {
         name: '--line-width',
         syntax: '<length>',
         inherits: true,
         initialValue: '10px'
+    }, {
+        name: '--line-number',
+        syntax: '<integer>',
+        inherits: true,
+        initialValue: '2'
+
     })
 } else {
     document.querySelector('html').classList.add('no-houdini-support');
