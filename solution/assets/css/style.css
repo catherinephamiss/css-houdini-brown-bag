@@ -52,11 +52,12 @@ footer {
     color: white;
     --hover: #D4D;
     background: linear-gradient(#60D, var(--hover));
-    transition: --hover 2s;
+    transition: --hover 3s;
 }
 
 #page-title:hover {
     --hover: #666;
+    cursor: pointer;
 }
 
 h2,

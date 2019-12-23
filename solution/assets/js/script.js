@@ -1,7 +1,7 @@
 'use strict';
 
 // register new css properties
-if('registerProperty' in CSS) {
+if ('registerProperty' in CSS) {
     CSS.registerProperty({
         name: '--pacman-color-one',
         syntax: '<color>',
@@ -48,4 +48,7 @@ if ('paintWorklet' in CSS) {
 
 // Typed OM stuff below
 const headingOne = document.getElementById('page-title');
-headingOne.attributeStyleMap.set('--hover', "red");
+// headingOne.attributeStyleMap.set('--hover', 'gold');
+
+const helloWorld = document.getElementById("hello-world");
+helloWorld.attributeStyleMap.set('--line-number', 10);
