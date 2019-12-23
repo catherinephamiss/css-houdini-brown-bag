@@ -13,10 +13,20 @@ if ('registerProperty' in CSS) {
         inherits: true,
         initialValue: 'lightgray',
     }, {
-        name: '--hover',
+        name: '--pacman-color-three',
         syntax: '<color>',
         inherits: true,
-        initialValue: 'transparent'
+        initialValue: 'darkgray',
+    }, {
+        name: '--pacman-color-four',
+        syntax: '<color>',
+        inherits: true,
+        initialValue: 'slategray',
+    }, {
+        name: '--grad-color',
+        syntax: '<color>',
+        inherits: true,
+        initialValue: 'green'
     }, {
         name: '--line-color',
         syntax: '<color>',
@@ -31,7 +41,7 @@ if ('registerProperty' in CSS) {
         name: '--line-number',
         syntax: '<integer>',
         inherits: true,
-        initialValue: '2'
+        initialValue: '3'
 
     })
 } else {

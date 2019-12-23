@@ -31,32 +31,40 @@ footer {
 #p1 {
     --pacman-color-one: #ea5732;
     --pacman-color-two: #bada55;
+    --pacman-color-three: #0ff;
+    --pacman-color-four: #b20;
 }
 
 #p2 {
-    --pacman-color-one: #e66;
+    --pacman-color-one: #d3f3c8;
     --pacman-color-two: #101ca7;
+    --pacman-color-three: #e66;
+    --pacman-color-four: #d3c0d3;
 }
 
 #p3 {
-    --pacman-color-one: #bada55;
+    --pacman-color-one: #ba6e15;
     --pacman-color-two: #60061e;
+    --pacman-color-three: #bada55;
+    --pacman-color-four: #912a7e;
 }
 
 #p4 {
     --pacman-color-one: #ba11e2;
-    --pacman-color-two: #c0ffee;
+    --pacman-color-two: #f00ba2;
+    --pacman-color-three: #c0de25;
+    --pacman-color-four: #c0ffee;
 }
 
 #page-title {
     color: white;
-    --hover: #D4D;
-    background: linear-gradient(#60D, var(--hover));
-    transition: --hover 3s;
+    --grad-color: #D4D;
+    background: linear-gradient(#60D, var(--grad-color));
+    transition: --grad-color 3s;
 }
 
 #page-title:hover {
-    --hover: #666;
+    --grad-color: #666;
     cursor: pointer;
 }
 

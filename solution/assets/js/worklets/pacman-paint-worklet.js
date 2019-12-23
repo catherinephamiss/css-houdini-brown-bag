@@ -19,12 +19,14 @@ if (typeof registerPaint !== 'undefined') {
 
     class Pacman {
         static get inputProperties() {
-            return ['--pacman-color-one', '--pacman-color-two'];
+            return ['--pacman-color-one', '--pacman-color-two', '--pacman-color-three', '--pacman-color-four'];
         }
 
         paint(ctx, size, props) {
             const colorOne = props.get('--pacman-color-one');
             const colorTwo = props.get('--pacman-color-two');
+            const colorThree = props.get('--pacman-color-three');
+            const colorFour = props.get('--pacman-color-four');
             
             roundedRect(ctx, 12, 12, 150, 150, 15);
             roundedRect(ctx, 19, 19, 150, 150, 9);
@@ -33,11 +35,13 @@ if (typeof registerPaint !== 'undefined') {
             roundedRect(ctx, 135, 53, 49, 33, 10);
             roundedRect(ctx, 135, 119, 25, 49, 10);
 
+            ctx.fillStyle = colorOne;
             ctx.beginPath();
             ctx.arc(37, 37, 13, Math.PI / 7, -Math.PI / 7, false);
             ctx.lineTo(31, 37);
             ctx.fill();
 
+            ctx.fillStyle = "black";
             for (var i = 0; i < 8; i++) {
                 ctx.fillRect(51 + i * 16, 35, 4, 4);
             }
@@ -50,6 +54,7 @@ if (typeof registerPaint !== 'undefined') {
                 ctx.fillRect(51 + i * 16, 99, 4, 4);
             }
 
+            ctx.fillStyle = colorTwo;
             ctx.beginPath();
             ctx.moveTo(83, 116);
             ctx.lineTo(83, 102);
@@ -64,7 +69,7 @@ if (typeof registerPaint !== 'undefined') {
             ctx.lineTo(83, 116);
             ctx.fill();
 
-            ctx.fillStyle = colorOne;
+            ctx.fillStyle = colorThree;
             ctx.beginPath();
             ctx.moveTo(91, 96);
             ctx.bezierCurveTo(88, 96, 87, 99, 87, 101);
@@ -78,7 +83,7 @@ if (typeof registerPaint !== 'undefined') {
             ctx.bezierCurveTo(107, 99, 106, 96, 103, 96);
             ctx.fill();
 
-            ctx.fillStyle = colorTwo;
+            ctx.fillStyle = colorFour;
             ctx.beginPath();
             ctx.arc(101, 102, 2, 0, Math.PI * 2, true);
             ctx.fill();
