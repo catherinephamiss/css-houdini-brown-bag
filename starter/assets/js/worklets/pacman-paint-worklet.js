@@ -33,6 +33,7 @@ if (typeof registerPaint !== 'undefined') {
             roundedRect(ctx, 135, 53, 49, 33, 10);
             roundedRect(ctx, 135, 119, 25, 49, 10);
 
+            // define fill style
             ctx.beginPath();
             ctx.arc(37, 37, 13, Math.PI / 7, -Math.PI / 7, false);
             ctx.lineTo(31, 37);
@@ -50,6 +51,7 @@ if (typeof registerPaint !== 'undefined') {
                 ctx.fillRect(51 + i * 16, 99, 4, 4);
             }
 
+            // define fill style again
             ctx.beginPath();
             ctx.moveTo(83, 116);
             ctx.lineTo(83, 102);
@@ -64,7 +66,7 @@ if (typeof registerPaint !== 'undefined') {
             ctx.lineTo(83, 116);
             ctx.fill();
 
-            // define fill style (iris)
+            // define fill style
             ctx.beginPath();
             ctx.moveTo(91, 96);
             ctx.bezierCurveTo(88, 96, 87, 99, 87, 101);
@@ -78,7 +80,7 @@ if (typeof registerPaint !== 'undefined') {
             ctx.bezierCurveTo(107, 99, 106, 96, 103, 96);
             ctx.fill();
             
-            // define fill style again (pupil)
+            // define fill style again
             ctx.beginPath();
             ctx.arc(101, 102, 2, 0, Math.PI * 2, true);
             ctx.fill();
