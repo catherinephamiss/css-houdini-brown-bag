@@ -46,7 +46,7 @@ function initializeParallax(clip) {
   }
 
   window.scroller = document.querySelector('.scroll');
-  window.parallax = document.querySelector('.parallax');
+  // window.parallax = document.querySelector('.parallax');
   window.document.querySelector('button').onclick = function () {
     window.scroller.scrollTop = window.scroller.scrollHeight;
   };
