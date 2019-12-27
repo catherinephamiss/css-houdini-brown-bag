@@ -14,65 +14,12 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-<html land="en">
+<html lang="en">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    html, body {
-      margin: 0;
-      border: 0;
-      padding: 0;
-      position: relative;
-      overflow: hidden;
-      font-family: sans-serif;
-    }
-    .scroll {
-      margin: 0 auto;
-      padding: 20px;
-      max-width: 720px;
-      width: 100%;
-      height: 100vh;
-      overflow: scroll;
-      color: white;
-      background-color: rgba(0, 0, 0, 0.3);
-      scroll-behavior: smooth;
-      overflow-x: hidden;
-      overflow-y: auto;
-      position: relative;
-      -webkit-overflow-scrolling: touch;
-    }
-    .parallax {
-      background-image: url('pic.jpg');
-      background-size: cover;
-      background-position: 50% 50%;
-      width: 100vw;
-      height: 250vh;
-      width: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      /* margin-bottom: -130vh; */
-    }
-    #options {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-      background-color: white;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-    }
-    .container {
-      width: 100%;
-    }
-  </style>
-
-  <script src="parallax.js"></script>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/parallax.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       initializeParallax(document.querySelector(".scroll"));
@@ -135,6 +82,6 @@ limitations under the License.
     </label>
     <button>Apply</button>
   </div>
-  <script src="options.js"></script>
+  <script src="assets/options.js"></script>
 </body>
 </html>
