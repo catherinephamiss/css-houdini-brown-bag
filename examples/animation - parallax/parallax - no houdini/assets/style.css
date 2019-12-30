@@ -28,6 +28,10 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+.container {
+    width: 100vw;
+}
+
 .parallax {
     background-image: url('pic.jpg');
     background-size: cover;
@@ -50,8 +54,4 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
-}
-
-.container {
-    width: 100%;
 }

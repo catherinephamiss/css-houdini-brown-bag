@@ -5,6 +5,7 @@
 // // Cut out a random amount of text, but keep at least 10 characters
 // elem.textContent = t.slice(0, Math.floor(Math.random() * (t.length - 10) + 10));
 // })
+
 if ('layoutWorklet' in CSS) {
     CSS.layoutWorklet.addModule('masonry.js');
 } else {
