@@ -4,16 +4,16 @@ body {
     --columns: 3;
 }
 
-div {
+.brick {
     background-color: hsl(0, 80%, 20%);
     color: hsl(0, 80%, 95%);
     font: 12px sans-serif;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
     padding: 1rem;
 }
 
-div::first-letter {
-    font-size: 200%;
+.brick::first-letter {
+    font-size: 200% !important;
 }
