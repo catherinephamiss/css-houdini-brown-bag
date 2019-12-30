@@ -1,0 +1,12 @@
+.brick {
+    background-color: hsl(0, 80%, 20%);
+    color: hsl(0, 80%, 95%);
+    font: 12px sans-serif;
+    padding: 1rem;
+    width: 30%;
+    margin-bottom: 1rem;;
+}
+
+div::first-letter {
+    font-size: 200%;
+}

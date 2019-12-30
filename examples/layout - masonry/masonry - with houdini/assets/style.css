@@ -1,0 +1,19 @@
+body {
+    display: layout(masonry);
+    --padding: 1rem;
+    --columns: 3;
+}
+
+div {
+    background-color: hsl(0, 80%, 20%);
+    color: hsl(0, 80%, 95%);
+    font: 12px sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+div::first-letter {
+    font-size: 200%;
+}
