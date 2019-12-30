@@ -7,7 +7,7 @@
 // })
 
 if ('layoutWorklet' in CSS) {
-    CSS.layoutWorklet.addModule('masonry.js');
+    CSS.layoutWorklet.addModule('assets/masonry.js');
 } else {
     document.body.innerHTML = 'You need support for <a href="https://drafts.css-houdini.org/css-layout-api/">CSS Layout API</a> to view this demo :(';
 }
