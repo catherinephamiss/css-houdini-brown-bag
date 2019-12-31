@@ -13,3 +13,7 @@
 ### Activity
 - starter code - [link](https://catherinephamiss.github.io/css-houdini-brown-bag/activity/starter/)
 - solution - [link](https://catherinephamiss.github.io/css-houdini-brown-bag/activity/solution/)
+
+##### Acknowledgements
+- Google Chrome Labs' [Houdini samples](https://github.com/GoogleChromeLabs/houdini-samples)
+- David DeSandro's [Masonry.js library](https://masonry.desandro.com/)
