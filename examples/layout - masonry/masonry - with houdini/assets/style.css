@@ -1,0 +1,19 @@
+body {
+    display: layout(masonry);
+    --padding: 1rem;
+    --columns: 3;
+}
+
+.brick {
+    background-color: hsl(0, 80%, 20%);
+    color: hsl(0, 80%, 95%);
+    font: 12px sans-serif;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.brick::first-letter {
+    font-size: 200% !important;
+}

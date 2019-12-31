@@ -1,0 +1,95 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    text-align: center;
+    margin: 0 auto 5rem;
+    padding: 0 4rem;
+    min-height: 100%;
+}
+
+footer {
+    height: 4rem;
+    margin-top: 1rem;
+    width: 100%;
+    font-style: italic;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.pacman {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    /* call the paint worklet here */
+}
+
+#p1 {
+    /* custom properties live here */
+}
+
+#p2 {
+    /* custom properties live here */
+}
+
+#p3 {
+    /* custom properties live here */
+}
+
+#p4 {
+    /* custom properties live here */
+}
+
+#page-title {
+    color: white;
+    /* custom properties live here */
+    /* and let's use that custom property to play with the background */
+}
+
+#page-title:hover {
+    /* custom properties live here */
+}
+
+h2,
+h3 {
+    width: max-content;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+}
+
+h2 {
+    /* custom properties live here */
+    /* call the paint worklet here */
+}
+
+h3.pirate {
+    /* custom properties live here */
+    /* call the paint worklet here */
+}
+
+h3.sagan {
+    /* custom properties live here */
+    /* call the paint worklet here */
+}
+
+h3.cheese {
+    /* custom properties live here */
+    /* call the paint worklet here */
+}
+
+#warning {
+    display: none;
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: #F81;
+    border: 2px solid #101;
+}
+
+.no-houdini-support #warning {
+    display: block;
+}

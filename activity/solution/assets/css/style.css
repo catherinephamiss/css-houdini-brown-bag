@@ -1,0 +1,117 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    text-align: center;
+    margin: 0 auto 5rem;
+    padding: 0 4rem;
+    min-height: 100%;
+}
+
+footer {
+    height: 4rem;
+    margin-top: 1rem;
+    width: 100%;
+    font-style: italic;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.pacman {
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    background-image: paint(Pacman);
+}
+
+#p1 {
+    --pacman-color-one: #ea5732;
+    --pacman-color-two: #bada55;
+    --pacman-color-three: #0ff;
+    --pacman-color-four: #b20;
+}
+
+#p2 {
+    --pacman-color-one: #d3f3c8;
+    --pacman-color-two: #101ca7;
+    --pacman-color-three: #e66;
+    --pacman-color-four: #d3c0d3;
+}
+
+#p3 {
+    --pacman-color-one: #ba6e15;
+    --pacman-color-two: #60061e;
+    --pacman-color-three: #bada55;
+    --pacman-color-four: #912a7e;
+}
+
+#p4 {
+    --pacman-color-one: #ba11e2;
+    --pacman-color-two: #f00ba2;
+    --pacman-color-three: #c0de25;
+    --pacman-color-four: #c0ffee;
+}
+
+#page-title {
+    color: white;
+    --grad-color: #D4D;
+    background: linear-gradient(#60D, var(--grad-color));
+    transition: --grad-color 3s;
+}
+
+#page-title:hover {
+    --grad-color: #666;
+    cursor: pointer;
+}
+
+h2,
+h3 {
+    width: max-content;
+    line-height: 2rem;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+}
+
+h2 {
+    --line-color: powderblue;
+    --line-width: 3;
+    --line-number: 1;
+    background-image: paint(HeadingUnderline);
+}
+
+h3.pirate {
+    --line-width: 5;
+    --line-color: silver;
+    --line-number: 3;
+    background-image: paint(HeadingUnderline);
+}
+
+h3.sagan {
+    --line-width: 8;
+    --line-color: skyblue;
+    --line-number: 2;
+    background-image: paint(HeadingUnderline);
+}
+
+h3.cheese {
+    --line-width: 5;
+    --line-color: bisque;
+    --line-number: 5;
+    background-image: paint(HeadingUnderline);
+}
+
+#warning {
+    display: none;
+    padding: 1rem;
+    margin: 1rem auto;
+    background-color: #F81;
+    border: 2px solid #101;
+}
+
+.no-houdini-support #warning {
+    display: block;
+}
