@@ -18,5 +18,6 @@ Support for CSS Houdini is necessary to view these correctly. Use Chrome Canary 
 
 ## Acknowledgements
 - Google Chrome Labs' [Houdini samples](https://github.com/GoogleChromeLabs/houdini-samples)
+- Google Chrome Labs' [UI element samples](https://github.com/GoogleChromeLabs/ui-element-samples)
 - David DeSandro's [Masonry.js library](https://masonry.desandro.com/)
 - MDN Web Docs' [canvas API tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial)
