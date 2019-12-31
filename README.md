@@ -1,5 +1,7 @@
 # css-houdini-brown-bag
 
+Support for CSS Houdini is necessary to view these correctly. Use Chrome Canary with the Experimental Web Platform Features flag enabled.
+
 ## Examples
 #### Animation - parallax
 - [with Houdini](https://catherinephamiss.github.io/css-houdini-brown-bag/examples/animation%20-%20parallax/parallax%20-%20with%20houdini/)
