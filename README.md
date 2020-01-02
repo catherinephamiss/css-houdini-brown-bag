@@ -16,6 +16,9 @@ Support for CSS Houdini is necessary to view these correctly. Use Chrome Canary 
 - [starter code](https://catherinephamiss.github.io/css-houdini-brown-bag/activity/starter/)
 - [solution](https://catherinephamiss.github.io/css-houdini-brown-bag/activity/solution/)
 
+## Resources
+[Can be found here](https://github.com/CSSHoudini/awesome-css-houdini)
+
 ## Acknowledgements
 - Google Chrome Labs' [Houdini samples](https://github.com/GoogleChromeLabs/houdini-samples)
 - Google Chrome Labs' [UI element samples](https://github.com/GoogleChromeLabs/ui-element-samples)
