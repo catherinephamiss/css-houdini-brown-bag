@@ -64,7 +64,7 @@ if ('paintWorklet' in CSS) {
 
 // Typed OM stuff below
 const headingOne = document.getElementById('page-title');
-// headingOne.attributeStyleMap.set('--hover', 'gold');
+headingOne.attributeStyleMap.set('--grad-color', 'gold');
 
 const helloWorld = document.getElementById("hello-world");
 helloWorld.attributeStyleMap.set('--line-number', 10);
