@@ -19,12 +19,14 @@ if (typeof registerPaint !== 'undefined') {
 
                 ctx.strokeStyle = 'black';
                 ctx.lineWidth = width;
+                ctx.beginPath();
                 ctx.moveTo(0, yStart);
                 ctx.lineTo(xEnd, yEnd);
                 ctx.stroke();
                 
                 ctx.strokeStyle = color;
                 ctx.lineWidth = width;
+                ctx.beginPath();
                 ctx.moveTo(0, yStart);
                 ctx.lineTo(xEnd, yEnd);
                 ctx.stroke();

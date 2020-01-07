@@ -7,42 +7,48 @@ if ('registerProperty' in CSS) {
         syntax: '<color>',
         inherits: true,
         initialValue: 'gray'
-    }, {
+    })
+    CSS.registerProperty({
         name: '--pacman-color-two',
         syntax: '<color>',
         inherits: true,
         initialValue: 'lightgray',
-    }, {
+    })
+    CSS.registerProperty({
         name: '--pacman-color-three',
         syntax: '<color>',
         inherits: true,
         initialValue: 'darkgray',
-    }, {
+    })
+    CSS.registerProperty({
         name: '--pacman-color-four',
         syntax: '<color>',
         inherits: true,
         initialValue: 'slategray',
-    }, {
+    })
+    CSS.registerProperty({
         name: '--grad-color',
         syntax: '<color>',
-        inherits: true,
-        initialValue: 'green'
-    }, {
+        inherits: false,
+        initialValue: 'transparent'
+    })
+    CSS.registerProperty({
         name: '--line-color',
         syntax: '<color>',
-        inherits: true,
+        inherits: false,
         initialValue: 'blue'
-    }, {
+    })
+    CSS.registerProperty({
         name: '--line-width',
-        syntax: '<number>',
-        inherits: true,
+        syntax: '<integer>',
+        inherits: false,
         initialValue: '5'
-    }, {
+    })
+    CSS.registerProperty({
         name: '--line-number',
         syntax: '<integer>',
-        inherits: true,
+        inherits: false,
         initialValue: '3'
-
     })
 } else {
     document.querySelector('html').classList.add('no-houdini-support');
@@ -62,3 +68,4 @@ const headingOne = document.getElementById('page-title');
 
 const helloWorld = document.getElementById("hello-world");
 helloWorld.attributeStyleMap.set('--line-number', 10);
+helloWorld.attributeStyleMap.set('--line-width', 1);
